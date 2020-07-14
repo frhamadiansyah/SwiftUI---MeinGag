@@ -19,18 +19,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                HStack {
+                    Spacer()
+                    Picker("Numbers", selection: $selectorIndex) {
+                        ForEach(0 ..< numbers.count) { index in
+                            Text(self.numbers[index])//.tag(index)
+    //                        print("hahaha")
+                        }
+                    }.pickerStyle(SegmentedPickerStyle())
+                    Spacer()
+                }
                 
-                Picker("Numbers", selection: $selectorIndex) {
-                    ForEach(0 ..< numbers.count) { index in
-                        Text(self.numbers[index])//.tag(index)
-//                        print("hahaha")
-                    }
-                }.pickerStyle(SegmentedPickerStyle())
-                Text("Selected value is: \(numbers[selectorIndex])").padding()
-                
-                List(networkManager.jokes) { joke in
+                List(networkManager.jokes[numbers[selectorIndex]]!) { joke in
                     VStack {
-                        urlImageView(urlString: joke.url)
                         HStack {
                             Spacer()
                             Text(joke.title)
@@ -38,18 +39,26 @@ struct ContentView: View {
                                 .padding()
                             Spacer()
                         }
-                        
+                        urlImageView(urlString: joke.url)
                         
                     }.padding()
                     
                 }
                 .navigationBarTitle("Mein Gag")
+                .onTapGesture {
+                    print("lalalala")
+                }
+                .onAppear {
+                    print(self.numbers[self.selectorIndex])
+                    self.networkManager.fetchAllJokes()
+                }
             }
         }
-        .onAppear {
-            print(self.numbers[self.selectorIndex])
-            self.networkManager.fetchData(typeMemes: self.numbers[self.selectorIndex])
-        }
+        
+    }
+    
+    func reload() {
+        print("ahaha")
     }
 }
 

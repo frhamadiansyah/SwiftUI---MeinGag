@@ -10,11 +10,20 @@ import Foundation
 
 class NetworkManager : ObservableObject {
     
-    @Published var jokes : [Memes] = []
+//    @Published var jokes : [Memes] = []
+    @Published var jokes : [String : [Memes]] = [TypeJoke.memes.rawValue : [],
+                                                 TypeJoke.dankmemes.rawValue : [],
+                                                 TypeJoke.me_irl.rawValue : []
+                                                ]
     
+    func fetchAllJokes() {
+        for item in TypeJoke.allCases {
+            fetchData(typeMemes: item.rawValue)
+        }
+    }
     
     func fetchData(typeMemes : String) {
-        guard let url = URL(string: "https://meme-api.herokuapp.com/gimme/\(typeMemes)/10") else { return }
+        guard let url = URL(string: "https://meme-api.herokuapp.com/gimme/\(typeMemes)/50") else { return }
         print(url.absoluteString)
         let urlSession = URLSession(configuration: URLSessionConfiguration.default)
         
@@ -25,7 +34,7 @@ class NetworkManager : ObservableObject {
                     do {
                         let joke = try decoder.decode(Joke.self, from: safeData)
                         DispatchQueue.main.async {
-                            self.jokes = joke.memes
+                            self.jokes[typeMemes] = joke.memes
                         }
                     
                     } catch  {

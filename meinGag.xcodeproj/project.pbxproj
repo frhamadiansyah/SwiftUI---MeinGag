@@ -47,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		750A007924BE2EEA004E4BFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				750A007724BB6B7A004E4BFC /* urlImageView.swift */,
+				753F3DFE24B859FB004EA938 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		752928C424B9A50300FEF793 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +88,12 @@
 				752928C424B9A50300FEF793 /* Model */,
 				753F3DFA24B859FB004EA938 /* AppDelegate.swift */,
 				753F3DFC24B859FB004EA938 /* SceneDelegate.swift */,
-				753F3DFE24B859FB004EA938 /* ContentView.swift */,
+				750A007924BE2EEA004E4BFC /* View */,
 				753F3E0024B859FD004EA938 /* Assets.xcassets */,
 				753F3E0524B859FD004EA938 /* LaunchScreen.storyboard */,
 				753F3E0824B859FD004EA938 /* Info.plist */,
 				753F3E0224B859FD004EA938 /* Preview Content */,
 				750A007524BB4EA8004E4BFC /* CellView.swift */,
-				750A007724BB6B7A004E4BFC /* urlImageView.swift */,
 			);
 			path = meinGag;
 			sourceTree = "<group>";

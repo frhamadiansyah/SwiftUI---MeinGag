@@ -30,7 +30,7 @@ struct urlImageView: View {
                 Image(systemName: "arrow.2.circlepath")
                 .resizable()
                 .scaledToFit()
-                .rotationEffect(.degrees(360))
+                .rotationEffect(.degrees(90))
             } else {
                 Image(uiImage: imageLoader.image!)
                     .resizable()
