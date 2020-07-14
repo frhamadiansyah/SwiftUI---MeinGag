@@ -13,7 +13,6 @@ struct ContentView: View {
     
     @ObservedObject var networkManager = NetworkManager()
     @State private var selectorIndex = 0
-    @State private var numbers = ["memes", "dankmemes", "me_irl"]
     
     
     var body: some View {
@@ -22,15 +21,15 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     Picker("Numbers", selection: $selectorIndex) {
-                        ForEach(0 ..< numbers.count) { index in
-                            Text(self.numbers[index])//.tag(index)
+                        ForEach(0 ..< Subreddit.allCases.count) { index in
+                            Text(Subreddit.allCases[index].rawValue)//.tag(index)
     //                        print("hahaha")
                         }
                     }.pickerStyle(SegmentedPickerStyle())
                     Spacer()
                 }
                 
-                List(networkManager.jokes[numbers[selectorIndex]]!) { joke in
+                List(networkManager.jokes[Subreddit.allCases[selectorIndex].rawValue]!) { joke in
                     VStack {
                         HStack {
                             Spacer()
@@ -49,7 +48,6 @@ struct ContentView: View {
                     print("lalalala")
                 }
                 .onAppear {
-                    print(self.numbers[self.selectorIndex])
                     self.networkManager.fetchAllJokes()
                 }
             }

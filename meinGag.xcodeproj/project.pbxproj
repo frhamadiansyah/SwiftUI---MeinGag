@@ -18,6 +18,7 @@
 		753F3E0124B859FD004EA938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753F3E0024B859FD004EA938 /* Assets.xcassets */; };
 		753F3E0424B859FD004EA938 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753F3E0324B859FD004EA938 /* Preview Assets.xcassets */; };
 		753F3E0724B859FD004EA938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753F3E0524B859FD004EA938 /* LaunchScreen.storyboard */; };
+		758FCC5124BE377800B62CDD /* Subreddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FCC5024BE377800B62CDD /* Subreddit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		753F3E0324B859FD004EA938 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		753F3E0624B859FD004EA938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		753F3E0824B859FD004EA938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758FCC5024BE377800B62CDD /* Subreddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subreddit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				752928C524B9A51000FEF793 /* Joke.swift */,
 				752928C224B9A22300FEF793 /* NetworkManager.swift */,
 				750A007324BB2AA7004E4BFC /* ImageLoader.swift */,
+				758FCC5024BE377800B62CDD /* Subreddit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				753F3DFD24B859FB004EA938 /* SceneDelegate.swift in Sources */,
 				753F3DFF24B859FB004EA938 /* ContentView.swift in Sources */,
 				750A007824BB6B7A004E4BFC /* urlImageView.swift in Sources */,
+				758FCC5124BE377800B62CDD /* Subreddit.swift in Sources */,
 				750A007624BB4EA8004E4BFC /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

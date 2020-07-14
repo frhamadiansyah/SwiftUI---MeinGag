@@ -9,12 +9,6 @@
 import Foundation
 import UIKit
 
-enum TypeJoke: String, CaseIterable {
-    case memes
-    case dankmemes
-    case me_irl
-}
-
 struct Joke : Codable {
     var memes : [Memes]
 }

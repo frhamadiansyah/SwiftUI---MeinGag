@@ -11,13 +11,23 @@ import Foundation
 class NetworkManager : ObservableObject {
     
 //    @Published var jokes : [Memes] = []
-    @Published var jokes : [String : [Memes]] = [TypeJoke.memes.rawValue : [],
-                                                 TypeJoke.dankmemes.rawValue : [],
-                                                 TypeJoke.me_irl.rawValue : []
-                                                ]
+    @Published var jokes = [String : [Memes]]()
+//    @Published var jokes = [TypeJoke.memes.rawValue : [Memes](),
+//                            TypeJoke.dankmemes.rawValue : [Memes](),
+//                            TypeJoke.animemes.rawValue : [Memes](),
+//
+//    ]
+
+    init() {
+        for i in Subreddit.allCases {
+            jokes[i.rawValue] = [Memes]()
+        }
+    }
+
+    
     
     func fetchAllJokes() {
-        for item in TypeJoke.allCases {
+        for item in Subreddit.allCases {
             fetchData(typeMemes: item.rawValue)
         }
     }
@@ -33,6 +43,7 @@ class NetworkManager : ObservableObject {
                 if let safeData = data {
                     do {
                         let joke = try decoder.decode(Joke.self, from: safeData)
+//                        self.jokes[typeMemes] = [Memes]()
                         DispatchQueue.main.async {
                             self.jokes[typeMemes] = joke.memes
                         }
