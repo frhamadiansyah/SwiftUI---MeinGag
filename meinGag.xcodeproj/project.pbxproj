@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		750A007424BB2AA7004E4BFC /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A007324BB2AA7004E4BFC /* ImageLoader.swift */; };
 		750A007624BB4EA8004E4BFC /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A007524BB4EA8004E4BFC /* CellView.swift */; };
 		750A007824BB6B7A004E4BFC /* urlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A007724BB6B7A004E4BFC /* urlImageView.swift */; };
+		7512F63224D9CF4D00F90D92 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512F63124D9CF4D00F90D92 /* HomeView.swift */; };
 		752928C324B9A22300FEF793 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752928C224B9A22300FEF793 /* NetworkManager.swift */; };
 		752928C624B9A51000FEF793 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752928C524B9A51000FEF793 /* Joke.swift */; };
 		753F3DFB24B859FB004EA938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F3DFA24B859FB004EA938 /* AppDelegate.swift */; };
@@ -18,13 +19,35 @@
 		753F3E0124B859FD004EA938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753F3E0024B859FD004EA938 /* Assets.xcassets */; };
 		753F3E0424B859FD004EA938 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753F3E0324B859FD004EA938 /* Preview Assets.xcassets */; };
 		753F3E0724B859FD004EA938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753F3E0524B859FD004EA938 /* LaunchScreen.storyboard */; };
+		755037DF24D9EBE1004D5F98 /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755037DE24D9EBE1004D5F98 /* testView.swift */; };
 		758FCC5124BE377800B62CDD /* Subreddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FCC5024BE377800B62CDD /* Subreddit.swift */; };
+		758FCC6524C08A9500B62CDD /* meinGagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FCC6424C08A9500B62CDD /* meinGagTests.swift */; };
+		758FCC7324C08AA600B62CDD /* meinGagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FCC7224C08AA600B62CDD /* meinGagUITests.swift */; };
+		759FDEA224DDCDA9008FB078 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 759FDEA124DDCDA9008FB078 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		758FCC6724C08A9500B62CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 753F3DEF24B859FB004EA938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 753F3DF624B859FB004EA938;
+			remoteInfo = meinGag;
+		};
+		758FCC7524C08AA600B62CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 753F3DEF24B859FB004EA938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 753F3DF624B859FB004EA938;
+			remoteInfo = meinGag;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		750A007324BB2AA7004E4BFC /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		750A007524BB4EA8004E4BFC /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		750A007724BB6B7A004E4BFC /* urlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = urlImageView.swift; sourceTree = "<group>"; };
+		7512F63124D9CF4D00F90D92 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		752928C224B9A22300FEF793 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		752928C524B9A51000FEF793 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		753F3DF724B859FB004EA938 /* meinGag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meinGag.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,11 +58,33 @@
 		753F3E0324B859FD004EA938 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		753F3E0624B859FD004EA938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		753F3E0824B859FD004EA938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755037DE24D9EBE1004D5F98 /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
 		758FCC5024BE377800B62CDD /* Subreddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subreddit.swift; sourceTree = "<group>"; };
+		758FCC6224C08A9500B62CDD /* meinGagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meinGagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758FCC6424C08A9500B62CDD /* meinGagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meinGagTests.swift; sourceTree = "<group>"; };
+		758FCC6624C08A9500B62CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758FCC7024C08AA600B62CDD /* meinGagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meinGagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758FCC7224C08AA600B62CDD /* meinGagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meinGagUITests.swift; sourceTree = "<group>"; };
+		758FCC7424C08AA600B62CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		753F3DF424B859FB004EA938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759FDEA224DDCDA9008FB078 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758FCC5F24C08A9500B62CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758FCC6D24C08AA600B62CDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +99,9 @@
 			children = (
 				750A007724BB6B7A004E4BFC /* urlImageView.swift */,
 				753F3DFE24B859FB004EA938 /* ContentView.swift */,
+				750A007524BB4EA8004E4BFC /* CellView.swift */,
+				7512F63124D9CF4D00F90D92 /* HomeView.swift */,
+				755037DE24D9EBE1004D5F98 /* testView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -73,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				753F3DF924B859FB004EA938 /* meinGag */,
+				758FCC6324C08A9500B62CDD /* meinGagTests */,
+				758FCC7124C08AA600B62CDD /* meinGagUITests */,
 				753F3DF824B859FB004EA938 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				753F3DF724B859FB004EA938 /* meinGag.app */,
+				758FCC6224C08A9500B62CDD /* meinGagTests.xctest */,
+				758FCC7024C08AA600B62CDD /* meinGagUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +148,6 @@
 				753F3E0524B859FD004EA938 /* LaunchScreen.storyboard */,
 				753F3E0824B859FD004EA938 /* Info.plist */,
 				753F3E0224B859FD004EA938 /* Preview Content */,
-				750A007524BB4EA8004E4BFC /* CellView.swift */,
 			);
 			path = meinGag;
 			sourceTree = "<group>";
@@ -107,6 +158,24 @@
 				753F3E0324B859FD004EA938 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		758FCC6324C08A9500B62CDD /* meinGagTests */ = {
+			isa = PBXGroup;
+			children = (
+				758FCC6424C08A9500B62CDD /* meinGagTests.swift */,
+				758FCC6624C08A9500B62CDD /* Info.plist */,
+			);
+			path = meinGagTests;
+			sourceTree = "<group>";
+		};
+		758FCC7124C08AA600B62CDD /* meinGagUITests */ = {
+			isa = PBXGroup;
+			children = (
+				758FCC7224C08AA600B62CDD /* meinGagUITests.swift */,
+				758FCC7424C08AA600B62CDD /* Info.plist */,
+			);
+			path = meinGagUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +194,48 @@
 			dependencies = (
 			);
 			name = meinGag;
+			packageProductDependencies = (
+				759FDEA124DDCDA9008FB078 /* IQKeyboardManagerSwift */,
+			);
 			productName = meinGag;
 			productReference = 753F3DF724B859FB004EA938 /* meinGag.app */;
 			productType = "com.apple.product-type.application";
+		};
+		758FCC6124C08A9500B62CDD /* meinGagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758FCC6B24C08A9500B62CDD /* Build configuration list for PBXNativeTarget "meinGagTests" */;
+			buildPhases = (
+				758FCC5E24C08A9500B62CDD /* Sources */,
+				758FCC5F24C08A9500B62CDD /* Frameworks */,
+				758FCC6024C08A9500B62CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758FCC6824C08A9500B62CDD /* PBXTargetDependency */,
+			);
+			name = meinGagTests;
+			productName = meinGagTests;
+			productReference = 758FCC6224C08A9500B62CDD /* meinGagTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		758FCC6F24C08AA600B62CDD /* meinGagUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758FCC7724C08AA600B62CDD /* Build configuration list for PBXNativeTarget "meinGagUITests" */;
+			buildPhases = (
+				758FCC6C24C08AA600B62CDD /* Sources */,
+				758FCC6D24C08AA600B62CDD /* Frameworks */,
+				758FCC6E24C08AA600B62CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758FCC7624C08AA600B62CDD /* PBXTargetDependency */,
+			);
+			name = meinGagUITests;
+			productName = meinGagUITests;
+			productReference = 758FCC7024C08AA600B62CDD /* meinGagUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -142,6 +250,14 @@
 					753F3DF624B859FB004EA938 = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					758FCC6124C08A9500B62CDD = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 753F3DF624B859FB004EA938;
+					};
+					758FCC6F24C08AA600B62CDD = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 753F3DF624B859FB004EA938;
+					};
 				};
 			};
 			buildConfigurationList = 753F3DF224B859FB004EA938 /* Build configuration list for PBXProject "meinGag" */;
@@ -153,11 +269,16 @@
 				Base,
 			);
 			mainGroup = 753F3DEE24B859FB004EA938;
+			packageReferences = (
+				759FDEA024DDCDA9008FB078 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 753F3DF824B859FB004EA938 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				753F3DF624B859FB004EA938 /* meinGag */,
+				758FCC6124C08A9500B62CDD /* meinGagTests */,
+				758FCC6F24C08AA600B62CDD /* meinGagUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -173,6 +294,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		758FCC6024C08A9500B62CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758FCC6E24C08AA600B62CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -183,6 +318,8 @@
 				752928C324B9A22300FEF793 /* NetworkManager.swift in Sources */,
 				752928C624B9A51000FEF793 /* Joke.swift in Sources */,
 				750A007424BB2AA7004E4BFC /* ImageLoader.swift in Sources */,
+				7512F63224D9CF4D00F90D92 /* HomeView.swift in Sources */,
+				755037DF24D9EBE1004D5F98 /* testView.swift in Sources */,
 				753F3DFB24B859FB004EA938 /* AppDelegate.swift in Sources */,
 				753F3DFD24B859FB004EA938 /* SceneDelegate.swift in Sources */,
 				753F3DFF24B859FB004EA938 /* ContentView.swift in Sources */,
@@ -192,7 +329,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		758FCC5E24C08A9500B62CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758FCC6524C08A9500B62CDD /* meinGagTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758FCC6C24C08AA600B62CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758FCC7324C08AA600B62CDD /* meinGagUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		758FCC6824C08A9500B62CDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 753F3DF624B859FB004EA938 /* meinGag */;
+			targetProxy = 758FCC6724C08A9500B62CDD /* PBXContainerItemProxy */;
+		};
+		758FCC7624C08AA600B62CDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 753F3DF624B859FB004EA938 /* meinGag */;
+			targetProxy = 758FCC7524C08AA600B62CDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		753F3E0524B859FD004EA938 /* LaunchScreen.storyboard */ = {
@@ -360,6 +526,84 @@
 			};
 			name = Release;
 		};
+		758FCC6924C08A9500B62CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = meinGagTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeveloperAcademy.selfProject.meinGagTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meinGag.app/meinGag";
+			};
+			name = Debug;
+		};
+		758FCC6A24C08A9500B62CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = meinGagTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeveloperAcademy.selfProject.meinGagTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meinGag.app/meinGag";
+			};
+			name = Release;
+		};
+		758FCC7824C08AA600B62CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = meinGagUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeveloperAcademy.selfProject.meinGagUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = meinGag;
+			};
+			name = Debug;
+		};
+		758FCC7924C08AA600B62CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPMPS53HUZ;
+				INFOPLIST_FILE = meinGagUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DeveloperAcademy.selfProject.meinGagUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = meinGag;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -381,7 +625,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		758FCC6B24C08A9500B62CDD /* Build configuration list for PBXNativeTarget "meinGagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758FCC6924C08A9500B62CDD /* Debug */,
+				758FCC6A24C08A9500B62CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		758FCC7724C08AA600B62CDD /* Build configuration list for PBXNativeTarget "meinGagUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758FCC7824C08AA600B62CDD /* Debug */,
+				758FCC7924C08AA600B62CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		759FDEA024DDCDA9008FB078 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		759FDEA124DDCDA9008FB078 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 759FDEA024DDCDA9008FB078 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 753F3DEF24B859FB004EA938 /* Project object */;
 }

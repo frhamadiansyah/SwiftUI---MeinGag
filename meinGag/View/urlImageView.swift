@@ -31,6 +31,11 @@ struct urlImageView: View {
                 .resizable()
                 .scaledToFit()
                 .rotationEffect(.degrees(90))
+                    .transition(.slide)
+//                    .onAppear() {
+//                        withAnimation { self.rotationEffect(.degrees(90))}
+//                    }
+//                .repeatForever()
             } else {
                 Image(uiImage: imageLoader.image!)
                     .resizable()
